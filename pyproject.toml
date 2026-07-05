@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dsproject"
+version = "0.1.0"
+description = "End-to-end Data Science learning project"
+readme = "README.md"
+requires-python = ">=3.14"
+
+authors = [
+    { name = "Aashish", email = "aashish23230@gmail.com" }
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
